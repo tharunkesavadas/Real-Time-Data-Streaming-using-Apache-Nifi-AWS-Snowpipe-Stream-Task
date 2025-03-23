@@ -1,8 +1,6 @@
 # Real-Time-Data-Streaming-using-Apache-Nifi-AWS-Snowpipe-Stream-Task
 
-#### This project demonstrates the implementation of a real-time data streaming pipeline using Apache NiFi, AWS S3, Snowflake Snowpipe, and Snowflake Streams & Tasks. The goal is to automate the ingestion, transformation, and loading (ETL) of data while ensuring minimal latency and enabling real-time business insights.
-
-#### The architecture is designed to process large-scale data efficiently by leveraging cloud-native tools. This solution is ideal for organizations looking to monitor and analyze real-time data streams.
+#### This project demonstrates the implementation of a real-time data streaming pipeline using Apache NiFi, AWS S3, Snowflake Snowpipe, and Snowflake Streams & Tasks. The goal is to automate the ingestion, transformation, and loading (ETL) of data while ensuring minimal latency and enabling real-time business insights. The architecture is designed to process large-scale data efficiently by leveraging cloud-native tools. This solution is ideal for organizations looking to monitor and analyze real-time data streams.
 
 #### Features
 
@@ -18,7 +16,17 @@
 
 - Scalable and cost-effective architecture.
 
-### Tech Stack
+#### Architecture Overview
+
+* Data Generation: Simulated data is generated and sent to Apache NiFi.
+
+* NiFi Data Processing: NiFi processes the data and pushes it to AWS S3.
+
+* Snowpipe: Snowpipe continuously ingests data from AWS S3 into Snowflake tables.
+
+* Streams & Tasks: Data is transformed using Snowflake Streams and Tasks for real-time analysis.
+
+#### Tech Stack
 
 1. Apache NiFi: Data ingestion and transformation.
 
